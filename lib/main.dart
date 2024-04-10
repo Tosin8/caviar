@@ -24,18 +24,20 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
         
           scaffoldBackgroundColor: kOffWhite, 
+          iconTheme: const IconThemeData(color: kDark), 
+          primarySwatch: Colors.grey, 
         ),
-        home:  child, 
+        home:  const SplashScreen(), 
       ); 
       }, 
-      child: splashScreen(),
+      
     ); 
   
   }
 }
 
-class splashScreen extends StatelessWidget {
-  const splashScreen({super.key});
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
