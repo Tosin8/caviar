@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646447004882",
+    "project_id": "caviar-70085",
+    "storage_bucket": "caviar-70085.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646447004882:android:f2043e1062b8d4191f810b",
+        "android_client_info": {
+          "package_name": "com.example.caviar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpgSFTzLib7eQGeW3GUsUa3GPdBwTlxls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
