@@ -18,10 +18,24 @@ class Home extends StatelessWidget {
             alignment: Alignment.bottomCenter, 
             child: Theme(data: Theme.of(context).copyWith(canvasColor: kPrimary),
              child: BottomNavigationBar(
-              items: []))
+              items: [
+                BottomNavigationBarItem(
+                  icon: Icon(Iconsax.home), 
+                label: 'Home'), 
+                BottomNavigationBarItem(
+                  icon: Icon(Iconsax.search), 
+                label: 'Home'), BottomNavigationBarItem(
+                  icon: Icon(Iconsax.home), 
+                label: 'Home'), BottomNavigationBarItem(
+                  icon: Icon(Iconsax.home), 
+                label: 'Home'), 
+              ]))
           )
         ]
       )
     );
   }
+}
+
+class Iconsax {
 }
