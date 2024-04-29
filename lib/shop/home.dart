@@ -18,16 +18,23 @@ class Home extends StatelessWidget {
             alignment: Alignment.bottomCenter, 
             child: Theme(data: Theme.of(context).copyWith(canvasColor: kPrimary),
              child: BottomNavigationBar(
+              showSelectedLabels: false, 
+              showUnselectedLabels: false , 
+              unselectedIconTheme: const IconThemeData(color: Colors.black38),
+              selectedIconTheme: const IconThemeData(color: kSecondary),
+              onTap: (value) {
+                print(value); 
+              },
               items: [
-                BottomNavigationBarItem(
-                  icon: Icon(Iconsax.home), 
+                const BottomNavigationBarItem(
+                  icon: Icon(Icons.home), 
                 label: 'Home'), 
-                BottomNavigationBarItem(
-                  icon: Icon(Iconsax.search), 
-                label: 'Home'), BottomNavigationBarItem(
-                  icon: Icon(Iconsax.home), 
-                label: 'Home'), BottomNavigationBarItem(
-                  icon: Icon(Iconsax.home), 
+                const BottomNavigationBarItem(
+                  icon: Icon(Icons.search), 
+                label: 'Home'), const BottomNavigationBarItem(
+                  icon: Icon(Icons.shopping_cart), 
+                label: 'Home'), const BottomNavigationBarItem(
+                  icon: Icon(Icons.person), 
                 label: 'Home'), 
               ]))
           )
