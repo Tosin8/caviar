@@ -1,11 +1,16 @@
 import 'package:caviar/util/constants/const.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../util/controllers/tab_index_controller.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+    final controller = Get.put(TabIndexController());
     return Scaffold( 
       body: Stack( 
         children: [
