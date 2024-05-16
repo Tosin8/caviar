@@ -11,19 +11,19 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final controller = Get.put(TabIndexController());
-    return Scaffold( 
-      body: Stack( 
-        children: [
-          Container(
-            height: height, 
-            width: width, 
-            color: kOffWhite, 
-          ), 
-          Align(
-            alignment: Alignment.bottomCenter, 
-            child: Theme(data: Theme.of(context).copyWith(canvasColor: kPrimary),
-             child: BottomNavigationBar(
-              showSelectedLabels: false, 
+    return Obx(() => Scaffold( 
+          body: Stack( 
+            children: [
+              Container(
+                height: height, 
+                width: width, 
+                color: kOffWhite, 
+              ), 
+              Align(
+                alignment: Alignment.bottomCenter, 
+                child: Theme(data: Theme.of(context).copyWith(canvasColor: kPrimary),
+                 child: BottomNavigationBar(
+               showSelectedLabels: false, 
               showUnselectedLabels: false , 
               unselectedIconTheme: const IconThemeData(color: Colors.black38),
               selectedIconTheme: const IconThemeData(color: kSecondary),
@@ -42,9 +42,11 @@ class Home extends StatelessWidget {
                 label: 'Home'), BottomNavigationBarItem(
                   icon: Icon(Icons.person), 
                 label: 'Home'), 
-              ]))
-          )
-        ]
+              ], 
+              ), 
+              )
+     ) ]),  
+        
       )
     );
   }
