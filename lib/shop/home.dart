@@ -30,15 +30,16 @@ class Home extends StatelessWidget {
               onTap: (value) {
                 print(value); 
               },
-              items: [
-                const BottomNavigationBarItem(
+              items: const [
+                BottomNavigationBarItem(
                   icon: Icon(Icons.home), 
                 label: 'Home'), 
-                const BottomNavigationBarItem(
+                 BottomNavigationBarItem(
                   icon: Icon(Icons.search), 
-                label: 'Home'), const BottomNavigationBarItem(
+                label: 'Home'),
+                BottomNavigationBarItem(
                   icon: Icon(Icons.shopping_cart), 
-                label: 'Home'), const BottomNavigationBarItem(
+                label: 'Home'), BottomNavigationBarItem(
                   icon: Icon(Icons.person), 
                 label: 'Home'), 
               ]))
